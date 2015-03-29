@@ -31,7 +31,11 @@ angular.module('testApp')
         modal.element.modal();
         modal.close.then(function(result) {
           if (result !== 'cancel') {
-            $scope.addAddress(result);
+            if (type === 'add') {
+              $scope.addAddress(result);
+            } else {
+              $scope.updateAddress(result, index);
+            }
           }
         });
       });
@@ -40,6 +44,10 @@ angular.module('testApp')
     $scope.addAddress = function (result) {
       $scope.addresses.push(result);
 	  };
+
+    $scope.updateAddress = function (result, index) {
+      $scope.addresses[index] = result;
+    };
     
     $scope.removeAddress = function (index) {
       $scope.addresses.splice(index, 1);
