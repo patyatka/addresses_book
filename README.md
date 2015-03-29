@@ -1,8 +1,12 @@
-# Addresses book by German Yerzhakov
+# Addresses book
 
-##Enviroment
+## Enviroment
 
-Nodejs v0.12.0
+Nodejs v0.12.0, grunt-cli
+
+## Preconditions steps
+
+Run `npm install` then `bower install` from the root of project 
 
 ## Build & development
 
