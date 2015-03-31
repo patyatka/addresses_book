@@ -2,12 +2,7 @@
 
 angular
   .module('testApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch',
     'LocalStorageModule',
     'angularModalService'
   ])
