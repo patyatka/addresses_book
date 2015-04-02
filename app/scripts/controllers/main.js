@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('testApp')
-  .controller('MainCtrl', function ($scope, addresses) {
-    $scope.addressesList = addresses.list;
-    $scope.addAddress = addresses.add;
-    $scope.removeAddress = addresses.remove;
-    $scope.updateAddress = addresses.update;
+  .controller('MainCtrl', function (addresses) {
+    this.addressesList = addresses.list;
+    this.addAddress = addresses.add;
+    this.removeAddress = addresses.remove;
+    this.updateAddress = addresses.update;
   });

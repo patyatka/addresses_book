@@ -24,7 +24,7 @@ angular.module('testApp')
         modal.element.modal();
         modal.close.then(function(result) {
           if (result !== 'cancel') {
-            scope.onUpdate({address: result});
+            scope.onUpdate({$address: result});
           }
         });
       });
